@@ -28,13 +28,13 @@ const WeatherData = () => {
     if (res.data.main.temp > "60") {
       $("body").css(
         "background-image",
-        "linear-gradient(rgb(226, 79, 39), aliceblue)"
+        "linear-gradient(rgb(226, 79, 39), yellow, rgb(226, 79, 39))"
       );
       console.log("its warm");
     } else if (res.data.main.temp <= "60") {
       $("body").css(
         "background-image",
-        "linear-gradient(rgb(53, 110, 216), aliceblue)"
+        "linear-gradient(rgb(53, 110, 216), lightblue, rgb(53, 110, 216))"
       );
       console.log("Its cold");
     }
